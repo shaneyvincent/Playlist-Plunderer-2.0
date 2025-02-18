@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Playlist Plunderer 2 – Single Page with 4 Sections</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* System or iTunes-like fonts (macOS) */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- LEFT NAV pinned (e.g., 15% wide) -->
+  <aside class="left-nav">
+    <nav>
+      <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#tutorial">TUTORIAL</a></li>
+        <li><a href="#download">DOWNLOAD</a></li>
+        <li><a href="#cart">CART</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- HEADER pinned top to the right of nav -->
+  <header></header>
+
+  <!-- MAIN STRIPES: 
+       152 total lines = 4 sections × 38 lines each
+       Lines 1..38   = ABOUT
+       Lines 39..76  = TUTORIAL
+       Lines 77..114 = DOWNLOAD
+       Lines 115..152 = CART
+  -->
+  <main class="striped-area">
+    <!-- ABOUT (lines 1..38) -->
+    <div class="line" id="about"><strong>ABOUT</strong></div>
+    <div class="line">Playlist Plunderer 2 is an advanced macOS app for managing audio playlists and beep-testing!</div>
+    <div class="line">Quickly create, edit, and beep-test curated sets of tracks—perfect for DJs, radio hosts, and more.</div>
+    <div class="line">Features advanced search, batch tagging, timed beep modes, Apple Silicon & Intel builds, and more.</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div> <!-- line 15 (pinned image will appear here) -->
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+
+    <!-- TUTORIAL (lines 39..76) -->
+    <div class="line" id="tutorial"><strong>TUTORIAL</strong></div>
+    <div class="line">Follow these steps to get started quickly:</div>
+    <div class="line">1) Launch the app.</div>
+    <div class="line">2) Import or create a playlist.</div>
+    <div class="line">3) Enable “beep mode” if needed.</div>
+    <div class="line">4) Play or export your curated set!</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div> <!-- line 53 pinned image will appear here -->
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+
+    <!-- DOWNLOAD (lines 77..114) -->
+    <div class="line" id="download"><strong>DOWNLOAD</strong></div>
+    <div class="line">Choose your build below. Click the beeper image or text to download.</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">
+      <!-- Intel Download Link -->
+      <a href="Intel_Build/PlaylistPlunderer2_Trial_INTEL.zip" download
+         class="download-link">
+         Playlist Plunderer 2 (Intel)
+      </a>
+    </div>
+    <div class="line">
+      <!-- ARM Download Link -->
+      <a href="ARM_Build/PlaylistPlunderer2_ARM.zip" download
+         class="download-link">
+         Playlist Plunderer 2 (ARM)
+      </a>
+    </div>
+    <div class="line">
+      <!-- License Link -->
+      <a href="javascript:addLicenseToCart()" class="download-link">
+        License.lic (Add to Cart)
+      </a>
+    </div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div> <!-- We'll pin the 3 images horizontally here at line 91 -->
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+
+    <!-- CART (lines 115..152) -->
+    <div class="line" id="cart"><strong>CART</strong></div>
+    <div class="line" id="cart-status">Your cart is empty.</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+    <div class="line">&nbsp;</div>
+
+    <!-- PINNED IMAGES -->
+    <!-- 1) ABOUT section rollover image at line 15 -->
+    <div class="floating-img" style="--start-line:85; --lines-tall:6;">
+      <a href="#download">
+        <img 
+          src="images/pp2beeperoff.png" 
+          alt="Beeper (Roll Over Me)" 
+          onmouseover="this.src='images/pp2beeperon.png'" 
+          onmouseout="this.src='images/pp2beeperoff.png'"
+        />
+      </a>
+    </div>
+
+    <!-- 2) TUTORIAL pinned image at line 53 linking to YouTube -->
+    <div class="floating-img" style="--start-line:53; --lines-tall:8;">
+      <a href="https://www.youtube.com/watch?v=wYn6IsnvI7U" target="_blank">
+        <img 
+          src="https://img.youtube.com/vi/wYn6IsnvI7U/0.jpg" 
+          alt="YouTube Tutorial"
+        />
+      </a>
+    </div>
+
+    <!-- 3) DOWNLOAD pinned images at line 91, horizontally side by side -->
+    <!-- Intel pinned button, left:30% -->
+    <div class="floating-img" style="--start-line:91; --lines-tall:6; left:30%;">
+      <a href="Intel_Build/PlaylistPlunderer2_Trial_INTEL.app" download
+         onclick="alert('Starting Intel download...');">
+        <img 
+          src="images/pp2beeperoff.png"
+          alt="Intel Download"
+          onmouseover="this.src='images/pp2beeperon.png'"
+          onmouseout="this.src='images/pp2beeperoff.png'"
+        />
+      </a>
+    </div>
+    <!-- ARM pinned button, left:50% -->
+    <div class="floating-img" style="--start-line:91; --lines-tall:6; left:50%;">
+      <a href="ARM_Build/PlaylistPlunderer2_ARM.app" download
+         onclick="alert('Starting Apple Silicon download...');">
+        <img
+          src="images/pp2beeperoff.png"
+          alt="ARM Download"
+          onmouseover="this.src='images/pp2beeperon.png'"
+          onmouseout="this.src='images/pp2beeperoff.png'"
+        />
+      </a>
+    </div>
+    <!-- License pinned button, left:70% -->
+    <div class="floating-img" style="--start-line:91; --lines-tall:6; left:70%;">
+      <a href="javascript:addLicenseToCart()">
+        <img
+          src="images/app icon.png"
+          alt="License File"
+        />
+      </a>
+      <!-- Stripe Buy Now button -->
+      <button id="checkout-button">Buy Now</button>
+    </div>
+
+  </main>
+
+  <!-- FOOTER pinned bottom -->
+  <footer>
+    <p>© 2025 All rights reserved - Playlist Plunderer 2</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Smooth scrolling inside .striped-area
+    document.addEventListener('DOMContentLoaded', function() {
+      const stripedArea = document.querySelector('.striped-area');
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').slice(1);
+          const targetEl = document.getElementById(targetId);
+          if (targetEl && stripedArea) {
+            const offsetTop = targetEl.offsetTop;
+            stripedArea.scrollTo({
+              top: offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+
+    // Simple "Cart" logic (client-side only):
+    let cartItems = [];
+
+    function addLicenseToCart() {
+      cartItems.push({ name: "Playlist Plunderer 2 License", price: "TBD" });
+      alert("License added to cart!");
+      updateCartStatus();
+    }
+
+    function updateCartStatus() {
+      const cartStatus = document.getElementById('cart-status');
+      if (cartItems.length === 0) {
+        cartStatus.innerText = "Your cart is empty.";
+      } else {
+        cartStatus.innerText = "Items in cart:\n" + 
+          cartItems.map(item => `• ${item.name} (${item.price})`).join("\n");
+      }
+    }
+  </script>
+
+  <!-- Stripe Checkout -->
+  <script src="https://js.stripe.com/v3/"></script>
+  <script>
+    document.getElementById("checkout-button").addEventListener("click", async () => {
+      const response = await fetch("/.netlify/functions/createCheckout", { method: "POST" });
+      const { sessionId } = await response.json();
+      const stripe = Stripe("pk_live_51QtEYaHhpWYxmat74klunXOs34j5MzBH6BLLgU8QkJBjCqC0g70E8E9dROBsY3G2iHGea9100CsWKoaDoAk2eVKW00MdP9O1r4");
+      stripe.redirectToCheckout({ sessionId });
+    });
+  </script>
+</body>
+</html>
